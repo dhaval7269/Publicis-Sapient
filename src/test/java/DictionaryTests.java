@@ -21,7 +21,7 @@ public class DictionaryTests {
     private WordsAvailable words;
     List<String> dictionaryWords;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUp() {
         dictionary = new Dictionary();
         words = mock(WordsAvailable.class);
